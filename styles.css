@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #8BA4E6, #2B4CB2, #8BA4E6);
+    background-size: 100% 200%;
+    animation: flow 20s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0 0%;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+h1 {
+    font-family: 'Petit Formal Script', cursive;
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
